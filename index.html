@@ -300,12 +300,12 @@ print('teste')
         // CONFIGURAÇÃO DO FIREBASE
         // IMPORTANTE: Substitua pela sua configuração do Firebase
         const firebaseConfig = {
-            apiKey: "AIzaSyCUQLj4Ab5xr-ZgUUWhHBfZwGiRxUciJM8",
-            authDomain: "wesome-project-1a1c2.firebaseapp.com",
-            projectId:  "awesome-project-1a1c2",
-            storageBucket: "awesome-project-1a1c2.firebasestorage.app",
-            messagingSenderId: "19241370249",
-            appId: "1:19241370249:web:03c64c5ab7620bb1a6fc58",
+            apiKey: process.env.API_KEY_FIREBASE,
+            authDomain: process.env.AUTH_DOMAIN_FIREBASE,
+            projectId:  process.env.PROJECT_ID_FIREBASE,
+            storageBucket: process.env.STORAGE_BUCKET_FIREBASE,
+            messagingSenderId: process.env.MESSAGING_SENDERID_FIREBASE,
+            appId: process.env.APP_ID_FIREBASE,
         };
 
         // Inicializar Firebase
